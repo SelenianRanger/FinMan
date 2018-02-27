@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B09891BC-A702-4A50-B963-4EF19D76B050}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinMan</RootNamespace>
+    <AssemblyName>FinMan</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\controllers\DBController.cs" />
+    <Compile Include="src\forms\AccountType\AddAccountTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\AccountType\AddAccountTypeDialog.Designer.cs">
+      <DependentUpon>AddAccountTypeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\AccountType\EditAccountTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\AccountType\EditAccountTypeDialog.Designer.cs">
+      <DependentUpon>EditAccountTypeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\Account\AddAccountDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\Account\AddAccountDialog.Designer.cs">
+      <DependentUpon>AddAccountDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\AdminWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\AdminWindow.Designer.cs">
+      <DependentUpon>AdminWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\ConnectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\ConnectionDialog.Designer.cs">
+      <DependentUpon>ConnectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\Account\EditAccountDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\Account\EditAccountDialog.Designer.cs">
+      <DependentUpon>EditAccountDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\EditViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\EditViewDialog.Designer.cs">
+      <DependentUpon>EditViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\ExpenseType\AddExpenseTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\ExpenseType\AddExpenseTypeDialog.Designer.cs">
+      <DependentUpon>AddExpenseTypeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\ExpenseType\EditExpenseTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\ExpenseType\EditExpenseTypeDialog.Designer.cs">
+      <DependentUpon>EditExpenseTypeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\ForgotDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\ForgotDialog.Designer.cs">
+      <DependentUpon>ForgotDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\AccountsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\AccountsDialog.Designer.cs">
+      <DependentUpon>AccountsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\IncomeType\AddIncomeTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\IncomeType\AddIncomeTypeDialog.Designer.cs">
+      <DependentUpon>AddIncomeTypeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\IncomeType\EditIncomeTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\IncomeType\EditIncomeTypeDialog.Designer.cs">
+      <DependentUpon>EditIncomeTypeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\Transaction\AddTransactionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\Transaction\AddTransactionDialog.Designer.cs">
+      <DependentUpon>AddTransactionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\Transaction\EditTransactionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\Transaction\EditTransactionDialog.Designer.cs">
+      <DependentUpon>EditTransactionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="src\forms\AccountType\AddAccountTypeDialog.resx">
+      <DependentUpon>AddAccountTypeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\AccountType\EditAccountTypeDialog.resx">
+      <DependentUpon>EditAccountTypeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\Account\AddAccountDialog.resx">
+      <DependentUpon>AddAccountDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\AdminWindow.resx">
+      <DependentUpon>AdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\ConnectionDialog.resx">
+      <DependentUpon>ConnectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\AccountsDialog.resx">
+      <DependentUpon>AccountsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\Account\EditAccountDialog.resx">
+      <DependentUpon>EditAccountDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\EditViewDialog.resx">
+      <DependentUpon>EditViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\ExpenseType\AddExpenseTypeDialog.resx">
+      <DependentUpon>AddExpenseTypeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\ExpenseType\EditExpenseTypeDialog.resx">
+      <DependentUpon>EditExpenseTypeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\ForgotDialog.resx">
+      <DependentUpon>ForgotDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\IncomeType\AddIncomeTypeDialog.resx">
+      <DependentUpon>AddIncomeTypeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\IncomeType\EditIncomeTypeDialog.resx">
+      <DependentUpon>EditIncomeTypeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="src\forms\Transaction\AddTransactionDialog.resx">
+      <DependentUpon>AddTransactionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\Transaction\EditTransactionDialog.resx">
+      <DependentUpon>EditTransactionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
